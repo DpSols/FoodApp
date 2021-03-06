@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>name </th>
+        <th>password</th>
+        <th>email</th>
+        <th>created date</th>
+    </tr>
+        <tr>
+        <td>{{ C.name }}</td>
+        <td>{{ C.password }}</td>
+        <td>{{ C.email }}</td>
+        <td>{{ C.created_date }}</td>
+    </tr>
+    </table>
+    <a href="{% url 'edit' pk_customer=C.id %}">edit</a>
+<h3>Orders</h3>
+<table>
+    <tr>
+        <th>name </th>
+        <th>password</th>
+        <th>email</th>
+        <th>created date</th>
+    </tr>
+        <tr>
+        <td>{{ O.menu }}</td>
+        <td>{{ O.status }}</td>
+        <td>{{ C.email }}</td>
+        <td>{{ C.created_date }}</td>
+    </tr>
+    </table>
+
+</body>
+</html>

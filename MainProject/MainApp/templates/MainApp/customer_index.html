@@ -1,0 +1,4 @@
+{% extends 'MainApp/index.html' %}
+{% block content %}
+<li class="nav-item"><a href="{% url 'customer' pk_customer=c.id %}" class="nav-link">Profile</a></li>
+{% endblock %}
